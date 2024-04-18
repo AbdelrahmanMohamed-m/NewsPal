@@ -23,6 +23,7 @@ class ArticleDetailsViewmodel(
 
     init {
       initializeViewState()
+        log("ArticleDetailsViewmodel")
     }
 
     private fun initializeViewState() {
