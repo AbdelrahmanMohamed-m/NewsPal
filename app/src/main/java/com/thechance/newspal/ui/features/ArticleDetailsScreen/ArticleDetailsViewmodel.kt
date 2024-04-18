@@ -31,6 +31,9 @@ class ArticleDetailsViewmodel(
 
     fun hello() {
         log("hello")
+        log("hello")
+        log("hello")
+        log("hello")
     }
     private fun initializeViewState() {
         _state.update {
