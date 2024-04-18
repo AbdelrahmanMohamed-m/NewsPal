@@ -22,7 +22,7 @@ class ArticleDetailsViewmodel(
     val args = ArticleArgs(savedStateHandle)
 
     init {
-      initializeViewState()
+
         log("ArticleDetailsViewmodel")
     }
 
