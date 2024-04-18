@@ -26,6 +26,10 @@ class ArticleDetailsViewmodel(
         log("ArticleDetailsViewmodel")
     }
 
+
+    fun hello() {
+        log("hello")
+    }
     private fun initializeViewState() {
         _state.update {
             it.copy(
