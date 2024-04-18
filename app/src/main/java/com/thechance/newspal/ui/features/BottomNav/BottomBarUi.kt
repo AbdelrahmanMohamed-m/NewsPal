@@ -69,7 +69,7 @@ fun RowScope.AddItem(
             )
         },
         onClick = {
-            val currentRoute = navController.currentBackStackEntry?.destination?.route
+            navController.currentBackStackEntry?.destination?.route
             navController.navigate(screen.route) {
                 popUpTo(navController.graph.findStartDestination().id) {
                     saveState = true
@@ -90,10 +90,8 @@ fun RowScope.AddItem(
                     navController.popBackStack(Screen.BookMarkScreen.route, false)
                 }
 
-
-
                 else -> {
-                    navController.popBackStack()
+
                 }
             }
 
