@@ -22,10 +22,13 @@ class ArticleDetailsViewmodel(
     val args = ArticleArgs(savedStateHandle)
 
     init {
-
-        log("ArticleDetailsViewmodel")
+      initializeViewState()
     }
 
+
+    fun hello() {
+        println("Hello")
+    }
     private fun initializeViewState() {
         _state.update {
             it.copy(
