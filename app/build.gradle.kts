@@ -24,10 +24,10 @@ android {
     buildTypes {
 
         getByName("debug") {
-            buildConfigField("String", "API_KEY", "\"${properties["apiKey"]}\"")
+            buildConfigField("String", "API_KEY", "\"${System.getenv("API_KEY") ?: properties["API_KEY"]}\"")
         }
         getByName("release") {
-            buildConfigField("String", "API_KEY", "\"${properties["apiKey"]}\"")
+            buildConfigField("String", "API_KEY", "\"${System.getenv("API_KEY") ?: properties["API_KEY"]}\"")
         }
         release {
             isMinifyEnabled = false
@@ -37,6 +37,7 @@ android {
             )
         }
     }
+
     buildFeatures {
         buildConfig = true
     }

@@ -18,6 +18,6 @@ interface ArticleDao {
     @Query("DELETE FROM ArticleDB WHERE title = :title")
     suspend fun deleteArticle(title: String)
 
-  @Query("SELECT title FROM ArticleDB WHERE title = :title LIMIT 1")
-suspend fun getArticleByTitle(title: String): String?
+    @Query("SELECT title FROM ArticleDB WHERE title = :title LIMIT 1")
+    suspend fun getArticleByTitle(title: String): String?
 }

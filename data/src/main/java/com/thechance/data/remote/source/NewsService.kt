@@ -23,7 +23,6 @@ interface NewsService {
     ): Response<NewsResponse<List<Article>>>
 
 
-
     @GET("top-headlines")
     suspend fun getTopHeadlines(
         @Query("country") country: String,
